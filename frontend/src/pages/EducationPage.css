@@ -1,0 +1,148 @@
+.edu-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--green-light);
+}
+
+.edu-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page-title h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.2rem;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.page-title p {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.edu-section h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--green-card);
+}
+
+.edu-section > p {
+  color: var(--text-body);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  max-width: 800px;
+}
+
+.stat-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 200px;
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: 0 2px 8px rgba(58,79,58,0.07);
+  border-top: 3px solid var(--green-mid);
+}
+
+.stat-number {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.2rem;
+  color: var(--green-dark);
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.condition-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.condition-card {
+  flex: 1 1 calc(50% - 0.625rem);
+  min-width: 280px;
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-shadow: 0 2px 8px rgba(58,79,58,0.07);
+}
+
+.condition-icon { font-size: 1.8rem; }
+
+.condition-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.condition-card p {
+  font-size: 0.88rem;
+  color: var(--text-body);
+  line-height: 1.6;
+}
+
+.range-info {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  background-color: var(--green-light);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  margin-top: auto;
+}
+
+.range-label { font-size: 0.78rem; color: var(--text-muted); font-weight: 500; }
+.range-value { font-size: 0.82rem; color: var(--green-dark); font-weight: 700; }
+
+.prevention-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.prevention-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--white);
+  padding: 0.85rem 1.25rem;
+  border-radius: 0.75rem;
+  font-size: 0.92rem;
+  color: var(--text-body);
+  box-shadow: 0 1px 4px rgba(58,79,58,0.06);
+}
+
+@media (max-width: 768px) {
+  .edu-main { padding: 1.5rem 1rem; }
+  .condition-card { flex: 1 1 100%; }
+  .stat-row { flex-direction: column; }
+}
